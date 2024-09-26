@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sans-serif";
+    color: white;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+header{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+h1{
+    position: absolute;
+    top: 3rem;
+    font-size: 10rem;
+    padding: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 2px black;
+}
+
+header img{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+#background{
+    transform: translateZ(-39px) scale(5);
+}
+
+#foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+article{
+    height: 30%;
+    background-color: rgb(45, 45, 45);
+    padding: 5rem;
+}
+
+article p{
+    font-size: 1.5rem;
+}
+
+article h2{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.bg{
+    height: 65vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg h3{
+    color: black;
+    font-size: 3rem;
+    background: white;
+    padding: 0.5rem 1rem;
+}
+
+.bg1{
+    background-image: url(images/sport-1.jpg);
+}
+
+.bg2{
+    background-image: url(images/sport-2.jpg);
+}
+
+.bg3{
+    background-image: url(images/sport-3.jpg);
+}
